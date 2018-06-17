@@ -1,9 +1,0 @@
-version: '3'
-services:
-  web:
-    restart: always
-    build: .
-    environment:
-      - VIRTUAL_HOST=rs.maxmalm.se
-      - LETSENCRYPT_HOST=rs.maxmalm.se
-      - LETSENCRYPT_EMAIL=benjick@dumfan.net
