@@ -1,0 +1,15 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "nodemon": "^1.17.5",
+    "ws": "^5.2.0"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "prod": "node src/index.js"
+  }
+}
