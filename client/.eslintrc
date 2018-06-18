@@ -1,0 +1,7 @@
+{
+  "extends": "benjick",
+  "env": {
+    "browser": true,
+    "jest": true
+  }
+}
