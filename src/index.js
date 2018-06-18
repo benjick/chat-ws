@@ -28,8 +28,9 @@ wss.on('connection', (ws) => {
           case 'message':
             if (message.name && message.string) {
               message.timestamp = Date.now();
-              db.insert(message);
-              broadcast(message);
+              db.insert(message, (err, doc) => {
+                broadcast(doc);
+              });
             }
           default:
             console.log('Got unknown message type:', message.type)
